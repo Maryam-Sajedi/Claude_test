@@ -17,7 +17,7 @@ def fib_fast(n):
         return n
     return fib_fast(n - 1) + fib_fast(n - 2)
 
-
+# Showing how long it takes to compute the Fibonacci number using both methods, we can use a timing function:
 def timed(func, n):
     start = time.perf_counter()
     result = func(n)
@@ -47,3 +47,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+    
+print(fib_fast(45))
